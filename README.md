@@ -3,6 +3,11 @@
 Query PuppetDB for group, user, and ssh_authorized_key resources on a
 particular server and then reproduce those resources on another server.
 
+## Requirements
+
+The nodes you wish to copy users to must have Puppet installed. It does not
+have to be a current version though.
+
 ## Usage
 
 Run a noop first to be safe:
