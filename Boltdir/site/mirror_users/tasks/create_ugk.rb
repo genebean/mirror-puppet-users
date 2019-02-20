@@ -12,7 +12,7 @@ elsif params['plan_noop']
 end
 
 command_line = [
-  '/opt/puppetlabs/puppet/bin/puppet',
+  '/usr/local/bin/puppet',
   'apply',
   '-e',
   "\"#{params['type']}{",
