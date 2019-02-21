@@ -1,0 +1,19 @@
+{
+  "puppet_task_version": 1,
+  "supports_noop": true,
+  "description": "Creates a group on the target node",
+  "parameters": {
+    "type": {
+      "description": "resource type to create",
+      "type": "Enum[group,user,ssh_authorized_key]"
+    },
+    "data": {
+      "description": "A hash of resources to pass to the create_resources",
+      "type": "Hash"
+    },
+    "plan_noop": {
+      "description": "Run in noop via plans",
+      "type": "Optional[Boolean]"
+    }
+  }
+}

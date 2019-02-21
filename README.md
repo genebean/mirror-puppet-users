@@ -29,7 +29,7 @@ To see more details run `bolt plan show mirror_users`.
 Under the hood this is using a [Puppet Bolt plan][] to
 
 1. query PuppetDB groups, users, and ssh keys on the given `source` node
-2. running a task to create each resource via `puppet apply`
+2. running a task to create each resource via Puppet's `create_resources()`
 
 The code that makes this all work is `Boltdir/site/mirror_users` with plans and
 tasks in their respective folders.
