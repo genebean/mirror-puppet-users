@@ -2,6 +2,8 @@
 require 'json'
 
 params = JSON.parse(STDIN.read)
+
+# Filter out require lines from each resources list of parameters
 params['data'].each do |k, v|
   v.delete('require')
 end
